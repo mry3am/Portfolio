@@ -1,0 +1,20 @@
+<svg width="150" height="57" viewBox="0 0 280 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="customGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="21%" stop-color="#3222BF" />  <!-- Dark Blue -->
+      <stop offset="69%" stop-color="#A14CA3" />  <!-- Purple -->
+    </linearGradient>
+  </defs>
+  
+  <!-- Text -->
+  <text x="10" y="70" fill="white" font-family="Arial" font-size="60" font-weight="bold">MARYAM</text>
+  
+  <!-- Droplet -->
+  <path d="M60 42.39C60 39.3438 62.9096 37.53 65.9493 37.6459L120.251 44.136C130.227 44.5794 138.591 36.226 138.161 27.2483C137.713 18.1161 124.434 13.5622 112.5844 20.1306L65.4171 44.0151C62.2629 45.4854 60 43.6363 60 42.39Z" fill="url(#customGradient)" transform="scale(1.5) translate(-30, -20)"/>
+</svg>
+
+
+
+
+
+
