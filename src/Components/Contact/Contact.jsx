@@ -66,21 +66,18 @@ const Contact = () => {
         <div className="contact-left">
           <h1>Let's Talk</h1>
           <p>
-            I'm always open to new projects and opportunities. Whether you're
-            looking for freelance work, have a question, or just want to discuss
-            potential collaborations, don’t hesitate to reach out. Let’s connect
-            and bring your ideas to life!
+            I'm passionate about AI, Machine Learning, and full-stack development. Whether you're looking for AI solutions, web development, automation systems, or just want to discuss potential collaborations in the tech space, I'd love to hear from you. Let's build something amazing together!
           </p>
           <div className="contact-details">
             <div className="contact-detail">
-              <img src={mail_icon} alt="" /> <p>hypervadesolutions@gmailcom</p>
+              <img src={mail_icon} alt="" /> <p>maryammunawar110@gmail.com</p>
             </div>
             <div className="contact-detail">
-              <img src={phone_icon} alt="" /> <p>+923044999749</p>
+              <img src={phone_icon} alt="" /> <p>+92 320 7483479</p>
             </div>
             <div className="contact-detail">
               <img src={location_icon} alt="" />{" "}
-              <p>Faisalabad, Punjab, Pakistan</p>
+              <p>Aqsa Town, Faisalabad, Punjab, Pakistan</p>
             </div>
           </div>
         </div>

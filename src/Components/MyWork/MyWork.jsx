@@ -12,7 +12,18 @@ const MyWork = () => {
         </div>
         <div className="mywork-container">
     {mywork_data.map((work,index)=>{
-        return <img key={index} src={work.w_img} alt=""/>
+        return (
+            <div key={index} className="work-item">
+                <img src={work.w_img} alt={work.w_name}/>
+                <div className="work-info">
+                    <h3>{work.w_name}</h3>
+                    <p>{work.w_desc}</p>
+                    <div className="work-tech">
+                        <span>{work.w_tech}</span>
+                    </div>
+                </div>
+            </div>
+        )
     })}
         </div>
         <div className="mywork-showmore">

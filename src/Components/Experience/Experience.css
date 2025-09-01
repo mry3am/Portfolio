@@ -1,0 +1,167 @@
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    justify-content: center;
+    margin: 80px 170px;
+}
+
+.experience-title {
+    position: relative;
+}
+
+.experience-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.experience-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.experience-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    width: 100%;
+}
+
+.education-section h2,
+.work-section h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.education-items,
+.work-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.education-item,
+.work-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.education-item:hover,
+.work-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.education-period,
+.work-period {
+    background: linear-gradient(90deg, rgba(50,34,191,1) 23%, rgba(161,76,163,1) 60%);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.education-content h3,
+.work-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.education-content p,
+.work-content h4 {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.work-content h4 {
+    color: #aaa;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.work-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.work-content li {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.work-content li:before {
+    content: "•";
+    color: #ff00ff;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+@media (max-width: 768px) {
+    .experience {
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    
+    .experience-title h1 {
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    
+    .experience-title img {
+        width: 130px;
+        margin-right: -20px;
+    }
+    
+    .experience-section {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .education-section h2,
+    .work-section h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .education-item,
+    .work-item {
+        padding: 20px;
+    }
+    
+    .education-content h3,
+    .work-content h3 {
+        font-size: 20px;
+    }
+    
+    .education-content p,
+    .work-content h4 {
+        font-size: 15px;
+    }
+    
+    .work-content li {
+        font-size: 13px;
+    }
+}

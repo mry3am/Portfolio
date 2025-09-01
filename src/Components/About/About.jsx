@@ -16,39 +16,57 @@ const About = () => {
         <div className="about-right">
           <div className="about-para">
             <p>
-              I’m a Frontend Developer with some solid experience under my belt.
-              I enjoy building clean, responsive interfaces and am excited to
-              keep growing and tackling new challenges in the field.
+              Motivated AI Engineer & Full-Stack Developer with hands-on experience in Machine Learning, Deep Learning, and full-stack web development. Skilled in building responsive applications using Next.js, React.js, Tailwind CSS, FastAPI, and PostgreSQL/Prisma.
             </p>
             <p>
-              My passion for frontend development is evident in both my hands-on
-              experience and the enthusiasm I bring to every project. I’m
-              committed to delivering high-quality, user-centric designs with
-              dedication and creativity.
+              I specialize in AI Agents SDK, n8n workflows, and MCP servers for intelligent automation. With expertise in IoT protocols, sensor integration, and edge computing, I deliver scalable, data-driven, and user-centric solutions with a strong problem-solving mindset.
             </p>
           </div>
           <div className="about-skills">
-            <div className="about-skill"><p>HTML & CSS</p><hr style={{width:"80%"}} /></div>
-            <div className="about-skill"><p>React JS</p><hr style={{width:"60%"}} /></div>
-            <div className="about-skill"><p>JavaScript</p><hr style={{width:"50%"}} /></div>
-            <div className="about-skill"><p>Next JS</p><hr style={{width:"40%"}} /></div>
-
+            <div className="about-skill">
+              <p>Python & Machine Learning</p>
+              <div className="skill-bar-container">
+                <div className="skill-bar" style={{width: "95%"}}></div>
+                <span className="skill-percentage">95%</span>
+              </div>
+            </div>
+            <div className="about-skill">
+              <p>Full-Stack Development</p>
+              <div className="skill-bar-container">
+                <div className="skill-bar" style={{width: "90%"}}></div>
+                <span className="skill-percentage">90%</span>
+              </div>
+            </div>
+            <div className="about-skill">
+              <p>AI Agents & Automation</p>
+              <div className="skill-bar-container">
+                <div className="skill-bar" style={{width: "85%"}}></div>
+                <span className="skill-percentage">85%</span>
+              </div>
+            </div>
+            <div className="about-skill">
+              <p>IoT & Embedded Systems</p>
+              <div className="skill-bar-container">
+                <div className="skill-bar" style={{width: "80%"}}></div>
+                <span className="skill-percentage">80%</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div className="about-achievements">
         <div className="about-achievement">
-            <h1>2+</h1>
+            <h1>3+</h1>
             <p>YEARS OF EXPERIENCE</p>
         </div>
         <hr />
         <div className="about-achievement">
-            <h1>10+</h1>
+            <h1>15+</h1>
             <p>PROJECTS COMPLETED</p>
         </div>
         <hr />
         <div className="about-achievement">
-            <h1>4+</h1>
+            <h1>8+</h1>
             <p>HAPPY CLIENTS</p>
         </div>
       </div>

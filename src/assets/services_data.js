@@ -1,33 +1,33 @@
 const Services_Data = [
     {
         s_no: "01",
-        s_name: "Custom Web Development",
-        s_desc: "Building tailored websites from scratch, focusing on clean code, scalability, and meeting specific client requirements."
+        s_name: "AI & Machine Learning Development",
+        s_desc: "Building intelligent systems using Python, TensorFlow, Scikit-learn, and Keras. Specializing in NLP, Computer Vision, and Generative AI applications."
     },
     {
         s_no: "02",
-        s_name: "JavaScript Development",
-        s_desc: "Creating dynamic and interactive elements on websites using modern JavaScript frameworks like React, Vue, or Angular."
+        s_name: "Full-Stack Web Development",
+        s_desc: "Creating end-to-end applications using Next.js, React.js, FastAPI, Node.js, Express.js with PostgreSQL/Prisma and MongoDB databases."
     },
     {
         s_no: "03",
-        s_name: "CSS Animation & Transitions",
-        s_desc: "Adding life to web pages with smooth animations and transitions using CSS, enhancing user engagement and experience."
+        s_name: "AI Agents & Automation",
+        s_desc: "Developing intelligent automation systems using AI Agents SDK, n8n workflows, and MCP servers for intelligent business process automation."
     },
     {
         s_no: "04",
-        s_name: "API Integration",
-        s_desc: "Connecting websites with third-party services and APIs to extend functionality, such as payment gateways, social media, or custom data feeds."
+        s_name: "IoT & Embedded Systems",
+        s_desc: "Building IoT solutions with sensor integration, edge computing, and IoT data processing for smart devices and voice assistants."
     },
     {
         s_no: "05",
-        s_name: "SEO Optimization",
-        s_desc: "Implementing on-page SEO best practices, including clean code, proper meta tags, and structured data, to improve search engine visibility."
+        s_name: "Cloud Deployment & DevOps",
+        s_desc: "Deploying scalable applications using Docker, Vercel, Google Cloud Platform (GCP), and implementing CI/CD pipelines with Git/GitHub."
     },
     {
         s_no: "06",
-        s_name: "Version Control (Git)",
-        s_desc: "Using Git for version control, allowing for efficient collaboration, tracking changes, and managing codebases with ease."
+        s_name: "API Development & Integration",
+        s_desc: "Creating RESTful APIs, integrating third-party services, and building data pipelines for seamless system connectivity."
     }
 ];
  
