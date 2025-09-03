@@ -3,8 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 80px 170px;
-    gap: 80px;
+    margin: 60px auto;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .about-title {
@@ -13,8 +16,9 @@
 
 .about-title h1 {
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 600;
+    text-align: center;
 }
 
 .about-title img {
@@ -48,9 +52,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 24px;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
     font-weight: 500;
     margin-top: 20px;
+    line-height: 1.6;
 }
 
 .about-skills {
@@ -68,7 +73,7 @@
 
 .about-skill p {
     min-width: 200px;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -115,7 +120,7 @@
 }
 
 .about-achievement h1 {
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 700;
     background: linear-gradient(90deg, rgba(50,34,191,1) 23%, rgba(161,76,163,1) 60%);
     background-clip: text;
@@ -124,7 +129,7 @@
 }
 
 .about-achievement p {
-    font-size: 22px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -138,23 +143,24 @@
     transition: 0.5s;
 }
 
+/* Large Desktop Responsive */
+@media(max-width: 1440px) {
+    .about {
+        margin: 60px 50px;
+        padding: 0 30px;
+    }
+}
+
 /* Tablet Responsive */
 @media(max-width: 1024px) {
     .about {
-        margin: 60px 100px;
+        margin: 60px 30px;
         gap: 60px;
-    }
-    
-    .about-title h1 {
-        font-size: 60px;
+        padding: 0 20px;
     }
     
     .about-section {
         gap: 60px;
-    }
-    
-    .about-para {
-        font-size: 20px;
     }
     
     .about-skill p {
@@ -175,12 +181,12 @@
 @media(max-width: 768px) {
     .about {
         gap: 50px;
-        margin: 50px 30px;
+        margin: 50px 20px;
         align-items: start;
+        padding: 0 15px;
     }
     
     .about-title h1 {
-        font-size: 40px;
         padding: 0;
     }
     
@@ -203,8 +209,6 @@
     }
     
     .about-para {
-        font-size: 16px;
-        line-height: 28px;
         gap: 15px;
     }
     
@@ -260,16 +264,12 @@
 /* Small Mobile Responsive */
 @media(max-width: 480px) {
     .about {
-        margin: 40px 20px;
+        margin: 40px 15px;
         gap: 40px;
-    }
-    
-    .about-title h1 {
-        font-size: 32px;
+        padding: 0 10px;
     }
     
     .about-para {
-        font-size: 14px;
         line-height: 24px;
     }
     
@@ -302,6 +302,23 @@
     
     .about-achievement p {
         font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 360px) {
+    .about {
+        margin: 30px 10px;
+        gap: 30px;
+        padding: 0 5px;
+    }
+    
+    .about-achievement h1 {
+        font-size: 20px;
+    }
+    
+    .about-achievement p {
+        font-size: 11px;
     }
 }
 

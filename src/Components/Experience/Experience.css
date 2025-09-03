@@ -2,9 +2,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
     justify-content: center;
-    margin: 80px 170px;
+    margin: 60px auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .experience-title {
@@ -13,8 +16,9 @@
 
 .experience-title h1 {
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 600;
+    text-align: center;
 }
 
 .experience-title img {
@@ -33,7 +37,7 @@
 
 .education-section h2,
 .work-section h2 {
-    font-size: 40px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 40px;
     color: #fff;
@@ -76,7 +80,7 @@
 
 .education-content h3,
 .work-content h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 8px;
@@ -84,14 +88,14 @@
 
 .education-content p,
 .work-content h4 {
-    font-size: 16px;
+    font-size: 14px;
     color: #ccc;
     margin-bottom: 15px;
 }
 
 .work-content h4 {
     color: #aaa;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -102,7 +106,7 @@
 
 .work-content li {
     color: #ccc;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.6;
     margin-bottom: 8px;
     padding-left: 20px;
@@ -117,15 +121,20 @@
     left: 0;
 }
 
+/* Large Desktop Responsive */
+@media(max-width: 1440px) {
+    .experience {
+        margin: 60px 50px;
+        padding: 0 30px;
+    }
+}
+
 /* Tablet Responsive */
 @media(max-width: 1024px) {
     .experience {
-        margin: 60px 100px;
+        margin: 60px 30px;
         gap: 60px;
-    }
-    
-    .experience-title h1 {
-        font-size: 60px;
+        padding: 0 20px;
     }
     
     .experience-section {
@@ -162,13 +171,13 @@
 @media(max-width: 768px) {
     .experience {
         gap: 50px;
-        margin: 50px 30px;
+        margin: 50px 20px;
         align-items: start;
+        padding: 0 15px;
     }
     
     .experience-title h1 {
         padding: 0;
-        font-size: 40px;
         font-weight: 600;
     }
     
@@ -217,12 +226,9 @@
 /* Small Mobile Responsive */
 @media(max-width: 480px) {
     .experience {
-        margin: 40px 20px;
+        margin: 40px 15px;
         gap: 40px;
-    }
-    
-    .experience-title h1 {
-        font-size: 32px;
+        padding: 0 10px;
     }
     
     .experience-title img {
@@ -263,5 +269,40 @@
     .work-period {
         padding: 6px 12px;
         font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 360px) {
+    .experience {
+        margin: 30px 10px;
+        gap: 30px;
+        padding: 0 5px;
+    }
+    
+    .education-section h2,
+    .work-section h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    
+    .education-item,
+    .work-item {
+        padding: 12px;
+    }
+    
+    .education-content h3,
+    .work-content h3 {
+        font-size: 14px;
+    }
+    
+    .education-content p,
+    .work-content h4 {
+        font-size: 12px;
+    }
+    
+    .work-content li {
+        font-size: 10px;
+        padding-left: 12px;
     }
 }

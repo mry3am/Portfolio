@@ -3,10 +3,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 80px auto;
-    gap: 80px;
+    margin: 60px auto;
+    gap: 60px;
     max-width: 1200px;
     padding: 0 20px;
+    width: 100%;
 }
 
 .services-title {
@@ -15,9 +16,10 @@
 
 .services-title h1 {
     padding: 0 30px;
-    font-size: 80px;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
     font-weight: 600;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .services-title img {
@@ -32,6 +34,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
     width: 100%;
+    justify-items: center;
 }
 
 .services-format {
@@ -53,7 +56,7 @@
 }
 
 .services-format h2 {
-    font-size: 38px;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: 800;
     background: linear-gradient(90deg, rgba(50, 34, 191, 1) 23%, rgba(161, 76, 163, 1) 60%);
     background-clip: text;
@@ -63,29 +66,34 @@
 }
 
 .services-format h3 {
-    font-size: 42px;
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     font-weight: 600;
     margin-bottom: 15px;
 }
 
 .services-format p {
     color: #d4d4d4;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.6;
     max-width: 280px;
     margin: 0 auto;
+    text-align: center;
+}
+
+/* Large Desktop Responsive */
+@media(max-width: 1440px) {
+    .services {
+        margin: 60px 50px;
+        padding: 0 30px;
+    }
 }
 
 /* Tablet Responsive */
 @media(max-width: 1024px) {
     .services {
-        margin: 60px auto;
+        margin: 60px 30px;
         gap: 60px;
-        padding: 0 15px;
-    }
-    
-    .services-title h1 {
-        font-size: 60px;
+        padding: 0 20px;
     }
     
     .services-container {
@@ -104,10 +112,6 @@
     .services-format h3 {
         font-size: 36px;
     }
-    
-    .services-format p {
-        font-size: 16px;
-    }
 }
 
 /* Mobile Responsive */
@@ -116,12 +120,11 @@
         align-items: start;
         gap: 50px;
         margin: 40px 20px;
-        padding: 0;
+        padding: 0 15px;
     }
     
     .services-title h1 {
         padding: 0;
-        font-size: 40px;
     }
     
     .services-title img {
@@ -148,7 +151,6 @@
     }
     
     .services-format p {
-        font-size: 16px;
         line-height: 1.5;
         max-width: 100%;
     }
@@ -159,10 +161,7 @@
     .services {
         margin: 30px 15px;
         gap: 40px;
-    }
-    
-    .services-title h1 {
-        font-size: 32px;
+        padding: 0 10px;
     }
     
     .services-title img {
@@ -187,7 +186,28 @@
     }
     
     .services-format p {
-        font-size: 14px;
         line-height: 1.4;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 360px) {
+    .services {
+        margin: 25px 10px;
+        gap: 30px;
+        padding: 0 5px;
+    }
+    
+    .services-format {
+        padding: 15px;
+        gap: 10px;
+    }
+    
+    .services-format h2 {
+        font-size: 20px;
+    }
+    
+    .services-format h3 {
+        font-size: 24px;
     }
 }

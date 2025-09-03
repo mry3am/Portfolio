@@ -2,26 +2,37 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 170px;
+    margin: 15px auto;
     padding: 0 20px;
+    max-width: 1200px;
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    height: 60px;
 }
 
 .nav-menu {
     display: flex;
     list-style: none;
     align-items: center;
-    gap: 60px;
-    font-size: 22px;
+    gap: 40px;
+    font-size: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-connect {
-    padding: 15px 25px;
+    padding: 12px 20px;
     border-radius: 50px;
     background: rgb(50,34,191);
     background: linear-gradient(90deg, rgba(50,34,191,1) 23%, rgba(161,76,163,1) 60%);
-    font-size: 22px;
+    font-size: 16px;
     cursor: pointer;
     transition: 0.5s;
+    height: fit-content;
+    display: flex;
+    align-items: center;
 }
 
 .nav-connect:hover {
@@ -30,6 +41,8 @@
 
 .navbar img {
     transition: 0.5s;
+    height: 40px;
+    width: auto;
 }
 
 .nav-menu li {
@@ -37,6 +50,9 @@
     flex-direction: column;
     gap: 5px;
     cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .nav-menu li img {
@@ -57,15 +73,22 @@
     display: none;
 }
 
+/* Large Desktop Responsive */
+@media(max-width: 1440px) {
+    .navbar {
+        margin: 20px 50px;
+    }
+}
+
 /* Tablet Responsive */
 @media(max-width: 1024px) {
     .navbar {
-        margin: 20px 100px;
+        margin: 20px 30px;
         padding: 0 15px;
     }
     
     .nav-menu {
-        gap: 40px;
+        gap: 35px;
         font-size: 20px;
     }
     
@@ -78,7 +101,7 @@
 /* Mobile Responsive */
 @media(max-width: 768px) {
     .navbar {
-        margin: 20px 30px;
+        margin: 15px 20px;
         padding: 0 10px;
     }
     
@@ -89,9 +112,15 @@
     .nav-mob-open {
         display: block;
         position: fixed;
-        right: 30px;
-        top: 20px;
+        right: 20px;
+        top: 15px;
         z-index: 1000;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-mob-open:hover {
+        transform: scale(1.1);
     }
     
     .nav-mob-close {
@@ -101,6 +130,12 @@
         left: 200px;
         width: 25px;
         z-index: 1001;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-mob-close:hover {
+        transform: scale(1.1);
     }
     
     .nav-menu {
@@ -109,11 +144,12 @@
         align-items: start;
         top: 0;
         gap: 25px;
-        background-color: #1f0016;
+        background-color: rgba(31, 0, 22, 0.95);
+        backdrop-filter: blur(10px);
         width: 300px;
         height: 100vh;
         z-index: 999;
-        transition: right 0.5s;
+        transition: right 0.5s ease;
         right: -350px;
         padding: 80px 40px 40px 40px;
         box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
@@ -129,6 +165,11 @@
         flex-direction: row;
         gap: 15px;
         width: 100%;
+        transition: transform 0.3s ease;
+    }
+    
+    .nav-menu li:hover {
+        transform: translateX(10px);
     }
     
     .nav-menu li p {
@@ -140,12 +181,14 @@
 /* Small Mobile Responsive */
 @media(max-width: 480px) {
     .navbar {
-        margin: 15px 20px;
+        margin: 10px 15px;
     }
     
     .nav-mob-open {
-        right: 20px;
-        top: 15px;
+        right: 15px;
+        top: 10px;
+        width: 24px;
+        height: 24px;
     }
     
     .nav-menu {
@@ -157,6 +200,7 @@
     .nav-mob-close {
         left: 180px;
         width: 20px;
+        height: 20px;
     }
     
     .nav-menu li {
@@ -166,5 +210,40 @@
     
     .nav-menu li p {
         font-size: 20px;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 360px) {
+    .navbar {
+        margin: 10px 10px;
+    }
+    
+    .nav-mob-open {
+        right: 10px;
+        top: 10px;
+        width: 22px;
+        height: 22px;
+    }
+    
+    .nav-menu {
+        width: 260px;
+        right: -300px;
+        padding: 60px 25px 25px 25px;
+    }
+    
+    .nav-mob-close {
+        left: 160px;
+        width: 18px;
+        height: 18px;
+    }
+    
+    .nav-menu li {
+        font-size: 18px;
+        gap: 10px;
+    }
+    
+    .nav-menu li p {
+        font-size: 18px;
     }
 } 
