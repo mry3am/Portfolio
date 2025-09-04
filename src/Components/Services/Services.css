@@ -117,10 +117,11 @@
 /* Mobile Responsive */
 @media(max-width: 768px) {
     .services {
-        align-items: start;
+        align-items: center;
         gap: 50px;
         margin: 40px 20px;
         padding: 0 15px;
+        text-align: center;
     }
     
     .services-title h1 {
@@ -135,11 +136,16 @@
     .services-container {
         grid-template-columns: 1fr;
         gap: 25px;
+        width: 100%;
+        justify-items: center;
     }
     
     .services-format {
         gap: 15px;
         padding: 25px;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
     }
     
     .services-format h2 {
@@ -187,6 +193,14 @@
     
     .services-format p {
         line-height: 1.4;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 420px) {
+    .services {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 

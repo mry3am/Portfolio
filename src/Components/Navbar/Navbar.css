@@ -117,6 +117,8 @@
         z-index: 1000;
         cursor: pointer;
         transition: transform 0.3s ease;
+        width: 26px;
+        height: 26px;
     }
     
     .nav-mob-open:hover {
@@ -128,7 +130,8 @@
         position: relative;
         top: 20px;
         left: 200px;
-        width: 25px;
+        width: 22px;
+        height: 22px;
         z-index: 1001;
         cursor: pointer;
         transition: transform 0.3s ease;
@@ -187,8 +190,8 @@
     .nav-mob-open {
         right: 15px;
         top: 10px;
-        width: 24px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
     }
     
     .nav-menu {
@@ -210,6 +213,26 @@
     
     .nav-menu li p {
         font-size: 20px;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 420px) {
+    .navbar {
+        padding: 0 16px;
+    }
+    .nav-mob-open {
+        width: 20px;
+        height: 20px;
+    }
+    .nav-mob-close {
+        width: 18px;
+        height: 18px;
+    }
+    /* slightly reduce logo */
+    .navbar img {
+        height: 28px;
+        width: auto;
     }
 }
 

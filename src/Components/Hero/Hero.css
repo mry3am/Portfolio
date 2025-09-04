@@ -215,6 +215,14 @@
 }
 
 /* Extra Small Mobile Responsive */
+@media(max-width: 420px) {
+    .hero {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+/* Extra Small Mobile Responsive */
 @media(max-width: 360px) {
     .hero {
         gap: 15px;

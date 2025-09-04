@@ -140,7 +140,7 @@
 @media(max-width: 768px) {
     .footer {
         margin: 40px 20px;
-        gap: 25px;
+        gap: 20px;
         padding: 0 15px;
     }
     
@@ -153,6 +153,7 @@
     .footer-top-left p {
         max-width: 100%;
         line-height: 1.5;
+        font-size: 13px;
     }
     
     .footer-top-right {
@@ -163,17 +164,19 @@
     
     .footer-email-input {
         width: 100%;
-        padding: 15px 20px;
-        padding-right: 20px;
-        gap: 15px;
+        padding: 12px 16px;
+        padding-right: 16px;
+        gap: 12px;
     }
     
     .footer-email-input input {
         min-width: auto;
+        font-size: 14px;
     }
     
     .footer-subscribe {
-        padding: 15px 30px;
+        font-size: 14px;
+        padding: 12px 22px;
         width: 100%;
         text-align: center;
     }
@@ -197,7 +200,7 @@
 @media(max-width: 480px) {
     .footer {
         margin: 30px 15px;
-        gap: 20px;
+        gap: 16px;
         padding: 0 10px;
     }
     
@@ -214,12 +217,13 @@
     }
     
     .footer-email-input {
-        padding: 12px 15px;
+        padding: 10px 12px;
         gap: 10px;
     }
     
     .footer-subscribe {
-        padding: 12px 25px;
+        font-size: 13px;
+        padding: 10px 18px;
     }
     
     .footer-bottom {
@@ -261,5 +265,19 @@
     
     .footer-bottom-right {
         gap: 15px;
+    }
+}
+
+/* Extra Small Mobile */
+@media(max-width: 420px) {
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .footer-top-left p {
+        font-size: 12px;
+    }
+    .footer-bottom-right p {
+        font-size: 12px;
     }
 }

@@ -182,8 +182,9 @@
     .about {
         gap: 50px;
         margin: 50px 20px;
-        align-items: start;
+        align-items: center;
         padding: 0 15px;
+        text-align: center;
     }
     
     .about-title h1 {
@@ -198,6 +199,7 @@
     .about-section {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
     }
     
     .about-left {
@@ -206,6 +208,8 @@
     
     .about-right {
         gap: 40px;
+        align-items: center;
+        text-align: center;
     }
     
     .about-para {
@@ -214,6 +218,8 @@
     
     .about-skills {
         gap: 20px;
+        width: 100%;
+        align-items: center;
     }
     
     .about-skill {
@@ -221,6 +227,7 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
     
     .about-skill p {
@@ -239,20 +246,15 @@
     }
     
     .about-achievements {
-        justify-content: space-between;
+        justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
     }
     
     .about-achievement {
         gap: 8px;
-        flex: 1;
+        flex: 1 1 140px;
         min-width: 120px;
-    }
-    
-    .about-achievement h1 {
-        font-size: 30px;
-        font-weight: 700;
     }
     
     .about-achievement p {
@@ -302,6 +304,17 @@
     
     .about-achievement p {
         font-size: 12px;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 420px) {
+    .about {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .about-achievements {
+        justify-content: center;
     }
 }
 

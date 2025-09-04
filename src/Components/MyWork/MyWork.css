@@ -151,8 +151,9 @@
     .mywork {
         gap: 50px;
         margin: 50px 20px;
-        align-items: start;
+        align-items: center;
         padding: 0 15px;
+        text-align: center;
     }
     
     .mywork-title h1 {
@@ -168,10 +169,15 @@
     .mywork-container {
         grid-template-columns: 1fr;
         gap: 25px;
+        width: 100%;
+        justify-items: center;
     }
     
     .work-item {
         padding: 15px;
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
     }
     
     .work-item img {
@@ -244,6 +250,14 @@
         padding: 15px 30px;
         font-size: 16px;
         margin: 40px auto;
+    }
+}
+
+/* Extra Small Mobile Responsive */
+@media(max-width: 420px) {
+    .mywork {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 

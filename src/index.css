@@ -33,11 +33,22 @@ body{
   .container {
     padding: 0 15px;
   }
+  /* Remove global padding; rely on section-level padding for perfect centering */
+  body,
+  .App {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 480px) {
   .container {
     padding: 0 10px;
+  }
+  body,
+  .App {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -155,6 +166,61 @@ button, a, input, textarea {
 
 .text-center {
   text-align: center;
+}
+
+/* Anchor offset so sections aren't hidden behind the navbar */
+#home,
+#about,
+#services,
+#experience,
+#skills,
+#work,
+#contact {
+  scroll-margin-top: 80px;
+}
+
+@media (max-width: 768px) {
+  #home,
+  #about,
+  #services,
+  #experience,
+  #skills,
+  #work,
+  #contact {
+    scroll-margin-top: 70px;
+  }
+}
+
+/* iPhone 11/12/13 Pro/Max width fix (414px) */
+@media (max-width: 420px) {
+  body,
+  .App {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Prevent title decoration from pushing layout off-center on mobile */
+@media (max-width: 768px) {
+  .about-title img,
+  .services-title img,
+  .experience-title img,
+  .skills-title img,
+  .mywork-title img,
+  .contact-title img {
+    display: none;
+  }
+  /* Stronger centering guard for all top-level sections */
+  .hero,
+  .about,
+  .services,
+  .experience,
+  .skills,
+  .mywork,
+  .contact {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
